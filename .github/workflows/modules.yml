@@ -52,12 +52,8 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - os: ubuntu-latest
-            tag: linux-x64
           - os: windows-latest
             tag: win-x64
-          - os: macos-latest
-            tag: mac-arm64
     runs-on: ${{ matrix.os }}
     timeout-minutes: 60
     defaults:
